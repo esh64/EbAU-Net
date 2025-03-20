@@ -12,7 +12,7 @@ This repository accompanies the paper:
 The paper provides an in-depth analysis of the proposed modifications, detailing how different attention mechanisms impact segmentation performance across diverse datasets.
 
 ### Abstract:
-Medical image segmentation plays a vital role in numerous applications and has gained significant attention since the introduction of the U-Net model, which enabled convolutional neural networks to achieve high performance with manageable computational costs. Recently, attention mechanisms have emerged as a promising approach to enhance model performance by emphasizing relevant features while suppressing irrelevant ones. This study explores the integration of channel and spatial attention mechanisms into the U-Net architecture, evaluating their impact on segmentation performance and computational cost. Experiments conducted on six public medical imaging datasets demonstrated performance improvements, with Intersection over Union (IoU) gains ranging from \textbf{1.68\%} to \textbf{33.66\%} compared to the original U-Net. These results highlight the potential of attention mechanisms to significantly improve the efficiency and effectiveness of medical image segmentation models.
+Medical image segmentation plays a vital role in numerous applications and has gained significant attention since the introduction of the U-Net model, which enabled convolutional neural networks to achieve high performance with manageable computational costs. Recently, attention mechanisms have emerged as a promising approach to enhance model performance by emphasizing relevant features while suppressing irrelevant ones. This study explores the integration of channel and spatial attention mechanisms into the U-Net architecture, evaluating their impact on segmentation performance and computational cost. Experiments conducted on six public medical imaging datasets demonstrated performance improvements, with Intersection over Union (IoU) gains ranging from **1.68%** to **33.66%** compared to the original U-Net. These results highlight the potential of attention mechanisms to significantly improve the efficiency and effectiveness of medical image segmentation models.
 
 #### Key Words:
 Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
@@ -29,9 +29,11 @@ The repository includes several implementations based on the original U-Net mode
 
 - **modelOriginal**: This corresponds to the original U-Net implementation.
 - **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Basic Convolutional** attention).
-- **EncoderDecoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** attention).
+- **Encoder_Decoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** attention).
 - **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** attention).
-- **SkipEncoderDecoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** attention).
+- **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** attention).
+
+
 
 Additionally, the first word following "model" in the file names indicates the type of attention mechanism applied:
 - **cSE**: Spatial Squeeze and Channel Excitation
@@ -114,6 +116,8 @@ This version is more structured and clear, highlighting each model's purpose, th
 | scSE-ED     | 0.8745       | 0.9268        | 0.9097          | 0.9131      | 0.9459       | 0.9349         |
 | scSE-S      | 0.8221       | 0.8868        | 0.8540          | 0.9157      | 0.9474       | 0.9356         |
 | scSE-SED    | 0.8771       | 0.9284        | 0.9142          | 0.9182      | 0.9497       | 0.9409         |
+
+### Qualitative Results
 
 ## Citation
 
