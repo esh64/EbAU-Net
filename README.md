@@ -19,15 +19,43 @@ Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
 
 ## Repository Structure
 
-Arquivos modelOriginal corresponde a implementação original da U-Net. arquivos com AllConv2 no nome implementa a abordagem dos mecanismos de atenção entre as convoluções(BC). Com nome EncoderDecoder implementa a abordagem de aplicar o mecanismo de atenção no Up Samplinge Down Sampling(ED). Skip implementa o método com mecanismo de atenção do Skip Connecetion(S) e por fim os arquivos com SkipEncoderDecoder implementa a junção dos dois últimos(SED). a primeira palavra após a palavra model indica o tipo de mecanismo de atenção cSE(Spatial Squeeze and Channel Excitation), sSE(Channel Squeeze and Spatial Excitation) csSE(Concurrent Spatial and Channel Squeeze and Excitation).
+Here's an improved and more structured version of your text in English, suitable for the README file:
 
-O arquivo train.py treina todos os modelos. O arquivo test.py avalia os modelos nas métricas principais utilizadas no artigo. O arquivo predict.py obtem as imagens das predições dos modelos. O arquivo tflop.py calcula a complexidade dos modelos.
+---
 
-Os arquivos utils.py, data.py e loss.py implementam funções básicas para que os demais códigos possam ser executados.
+## Model Implementations
+
+The repository includes several implementations based on the original U-Net model, with different attention mechanisms integrated into the convolutional layers. The file names indicate the specific attention mechanisms used in each model:
+
+- **modelOriginal**: This corresponds to the original U-Net implementation.
+- **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Basic Convolutional** attention).
+- **EncoderDecoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** attention).
+- **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** attention).
+- **SkipEncoderDecoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** attention).
+
+Additionally, the first word following "model" in the file names indicates the type of attention mechanism applied:
+- **cSE**: Spatial Squeeze and Channel Excitation
+- **sSE**: Channel Squeeze and Spatial Excitation
+- **csSE**: Concurrent Spatial and Channel Squeeze and Excitation
+
+## Script Descriptions
+
+- **train.py**: This script trains all the models.
+- **test.py**: This script evaluates the models using the main metrics discussed in the paper.
+- **predict.py**: This script generates predicted images from the models.
+- **tflop.py**: This script calculates the computational complexity of the models.
+
+## Utility Files
+
+- **utils.py**: Implements basic utility functions required for the other scripts to run.
+- **data.py**: Contains data preprocessing functions to load and prepare datasets for training and evaluation.
+- **loss.py**: Defines the loss functions used during model training.
+
+---
+
+This version is more structured and clear, highlighting each model's purpose, the attention mechanisms used, and the roles of the different scripts in the project.
 
 ## Results
-
-Aqui estão as tabelas em formato Markdown para o GitHub:
 
 ### Table 1: Average metrics of the models studied in this work for polyp segmentation in colonoscopy image datasets.
 
