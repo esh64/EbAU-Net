@@ -1,4 +1,4 @@
-# EbAU-Net: U-Net Enhanced by Attention
+# EbAU-Net: Enhanced by Attention U-Net 
 
 ## Overview
 
