@@ -19,10 +19,6 @@ Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
 
 ## Repository Structure
 
-Here's an improved and more structured version of your text in English, suitable for the README file:
-
----
-
 ## Model Implementations
 
 The repository includes several implementations based on the original U-Net model, with different attention mechanisms integrated into the convolutional layers. The file names indicate the specific attention mechanisms used in each model:
@@ -33,7 +29,7 @@ The repository includes several implementations based on the original U-Net mode
 - **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** attention).
 - **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** attention).
 
-
+![U-Net Attention Integration](AttentionEnhacement.png)
 
 Additionally, the first word following "model" in the file names indicates the type of attention mechanism applied:
 - **cSE**: Spatial Squeeze and Channel Excitation
@@ -43,7 +39,7 @@ Additionally, the first word following "model" in the file names indicates the t
 ## Script Descriptions
 
 - **train.py**: This script trains all the models.
-- **test.py**: This script evaluates the models using the main metrics discussed in the paper.
+- **test.py**: This script evaluates all the models using the main metrics discussed in the paper.
 - **predict.py**: This script generates predicted images from the models.
 - **tflop.py**: This script calculates the computational complexity of the models.
 
@@ -54,8 +50,6 @@ Additionally, the first word following "model" in the file names indicates the t
 - **loss.py**: Defines the loss functions used during model training.
 
 ---
-
-This version is more structured and clear, highlighting each model's purpose, the attention mechanisms used, and the roles of the different scripts in the project.
 
 ## Results
 
@@ -117,11 +111,16 @@ This version is more structured and clear, highlighting each model's purpose, th
 | scSE-S      | 0.8221       | 0.8868        | 0.8540          | 0.9157      | 0.9474       | 0.9356         |
 | scSE-SED    | 0.8771       | 0.9284        | 0.9142          | 0.9182      | 0.9497       | 0.9409         |
 
-### Qualitative Results
+### Qualitative Results on ETIS-LaribPolypDB
+
+![GT X U-Net X cSE-BC](ETIScomparison.png)
+
+### Complexity Analysis
+
+![TFLOPs and Param x IoU in ETIS](iou_vs_flops_params_etis.png)
+
 
 ## Citation
 
 If you use this repository in your research, please cite our paper:
-
-## Contact
 
