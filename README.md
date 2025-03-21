@@ -24,10 +24,10 @@ Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
 The repository includes several implementations based on the original U-Net model, with different attention mechanisms integrated into the convolutional layers. The file names indicate the specific attention mechanisms used in each model:
 
 - **modelOriginal**: This corresponds to the original U-Net implementation.
-- **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Between Convolutional** attention).
-- **Encoder_Decoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** attention).
-- **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** attention).
-- **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** attention).
+- **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Between Convolutional** approach).
+- **Encoder_Decoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** approach).
+- **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** approach).
+- **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** approach).
 
 ![U-Net Attention Integration](AttentionEnhacement.png)
 
