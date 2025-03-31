@@ -29,7 +29,7 @@ The repository includes several implementations based on the original U-Net mode
 - **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** approach).
 - **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** approach).
 
-![U-Net Attention Integration](AttentionEnhacement.png)
+![U-Net Attention Integration](Images/AttentionEnhacement.png)
 
 Additionally, the first word following "model" in the file names indicates the type of attention mechanism applied:
 - **cSE**: Spatial Squeeze and Channel Excitation
@@ -113,11 +113,11 @@ Additionally, the first word following "model" in the file names indicates the t
 
 ### Qualitative Results on ETIS-LaribPolypDB
 
-![GT X U-Net X cSE-BC](ETIScomparison.png)
+![GT X U-Net X cSE-BC](Images/ETIScomparison.png)
 
 ### Complexity Analysis
 
-![TFLOPs and Param x IoU in ETIS](iou_vs_flops_params_etis.png)
+![TFLOPs and Param x IoU in ETIS](Images/iou_vs_flops_params_etis.png)
 
 
 ## Citation
