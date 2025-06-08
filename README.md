@@ -23,19 +23,19 @@ Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
 
 In addition to the code files, the repository expects a folder named `data`, which should contain the **training** and **testing** datasets. Each dataset must have separate subfolders for:
 
-* **Input images** (e.g., `images`)
-* **Segmentation masks** (e.g., `masks`)
+* **Input images** (e.g., `image`)
+* **Segmentation masks** (e.g., `mask`)
 
 The expected structure is:
 
 ```
 data/
 ├── train/
-│   ├── images/
-│   └── masks/
+│   ├── image/
+│   └── mask/
 └── test/
-    ├── images/
-    └── masks/
+    ├── image/
+    └── mask/
 ```
 
 ## Model Implementations
