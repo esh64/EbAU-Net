@@ -126,7 +126,7 @@ if __name__ == "__main__":
         imported_module = __import__(module_name)
         build_unet = imported_module.build_unet
 
-        for seed in range(1, 6):
+        for seed in range(1, 10):
             print(f"\nTraining {model_name}, mdeol {seed}/5 with {seed}" seed)
 
             """ Configurar seeds """
