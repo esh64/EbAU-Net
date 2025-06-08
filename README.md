@@ -17,37 +17,57 @@ Medical image segmentation plays a vital role in numerous applications and has g
 #### Key Words:
 Attention Mechanism, Medical Images Segmentation, U-Net, Computer Vision.
 
+---
+
 ## Repository Structure
+
+In addition to the code files, the repository expects a folder named `data`, which should contain the **training** and **testing** datasets. Each dataset must have separate subfolders for:
+
+* **Input images** (e.g., `images`)
+* **Segmentation masks** (e.g., `masks`)
+
+The expected structure is:
+
+```
+data/
+├── train/
+│   ├── images/
+│   └── masks/
+└── test/
+    ├── images/
+    └── masks/
+```
 
 ## Model Implementations
 
 The repository includes several implementations based on the original U-Net model, with different attention mechanisms integrated into the convolutional layers. The file names indicate the specific attention mechanisms used in each model:
 
-- **modelOriginal**: This corresponds to the original U-Net implementation.
-- **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Between Convolutional** approach).
-- **Encoder_Decoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** approach).
-- **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** approach).
-- **Skip_Encoder_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** approach).
+* **modelOriginal**: This corresponds to the original U-Net implementation.
+* **AllConv2**: This implementation applies attention mechanisms between convolutions (BC - **Between Convolutional** approach).
+* **Encoder\_Decoder**: This model applies attention mechanisms to the upsampling and downsampling processes (ED - **Encoder-Decoder** approach).
+* **Skip**: This implementation integrates the attention mechanism into the skip connections (S - **Skip Connection** approach).
+* **Skip\_Encoder\_Decoder**: This model combines the two previous approaches, applying attention both in the skip connections and the upsampling/downsampling steps (SED - **Skip Encoder-Decoder** approach).
 
 ![U-Net Attention Integration](Images/AttentionEnhacement.png)
 
 Additionally, the first word following "model" in the file names indicates the type of attention mechanism applied:
-- **cSE**: Spatial Squeeze and Channel Excitation
-- **sSE**: Channel Squeeze and Spatial Excitation
-- **csSE**: Concurrent Spatial and Channel Squeeze and Excitation
+
+* **cSE**: Spatial Squeeze and Channel Excitation
+* **sSE**: Channel Squeeze and Spatial Excitation
+* **csSE**: Concurrent Spatial and Channel Squeeze and Excitation
 
 ## Script Descriptions
 
-- **train.py**: This script trains all the models.
-- **test.py**: This script evaluates all the models using the main metrics discussed in the paper.
-- **predict.py**: This script generates predicted images from the models.
-- **tflop.py**: This script calculates the computational complexity of the models.
+* **train.py**: This script trains all the models.
+* **test.py**: This script evaluates all the models using the main metrics discussed in the paper.
+* **predict.py**: This script generates predicted images from the models.
+* **tflop.py**: This script calculates the computational complexity of the models.
 
 ## Utility Files
 
-- **utils.py**: Implements basic utility functions required for the other scripts to run.
-- **data.py**: Contains data preprocessing functions to load and prepare datasets for training and evaluation.
-- **loss.py**: Defines the loss functions used during model training.
+* **utils.py**: Implements basic utility functions required for the other scripts to run.
+* **data.py**: Contains data preprocessing functions to load and prepare datasets for training and evaluation.
+* **loss.py**: Defines the loss functions used during model training.
 
 ---
 
