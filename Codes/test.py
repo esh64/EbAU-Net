@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
         """ Save metrics to CSV """
         columns = ["Jaccard", "F1", "Recall", "Precision", "Accuracy", "FPS"]
-        df = pd.DataFrame(all_metrics, columns=columns, index=[f"Seed_{i}" for i in range(1, 6)])
+        df = pd.DataFrame(all_metrics, columns=columns, index=[f"Seed_{i}" for i in range(1, 10)])
 
         """ Calculate mean and std """
         mean_metrics = df.mean(axis=0)
