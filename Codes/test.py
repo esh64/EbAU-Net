@@ -71,8 +71,7 @@ if __name__ == "__main__":
        "modelSSE_Encoder_Decoder.py",
        "modelSSE_Skip.py",
        "modelSSE_Skip_Encoder_Decoder.py",
-
-            ]
+        ]
 
     """ Device """
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -87,7 +86,7 @@ if __name__ == "__main__":
         build_unet = imported_module.build_unet
 
         """ Paths for all seeds """
-        model_paths = [f"files/{model_name}_{i}.h5" for i in range(1, 6)]
+        model_paths = [f"files/{model_name}_{i}.h5" for i in range(1, 10)]
 
         all_metrics = []
 
