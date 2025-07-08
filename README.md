@@ -144,3 +144,5 @@ Additionally, the first word following "model" in the file names indicates the t
 
 If you use this repository in your research, please cite our paper:
 
+E. S. Honorato, M. A. S. Uchida, A. J. M. Traina and D. F. Wolf, "Improving U-Net with Attention Mechanism for Medical Image Segmentation Applications," 2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), Madrid, Spain, 2025, pp. 264-269, doi: 10.1109/CBMS65348.2025.00060. keywords: {Image segmentation;Attention mechanisms;Computational modeling;Lungs;Computer architecture;Retina;Distance measurement;Computational efficiency;Convolutional neural networks;Biomedical imaging;Attention Mechanism;Medical Images Segmentation;U-Net;Computer Vision},
+
